@@ -1,0 +1,6 @@
+{
+  "name": "DeckRite RV Flooring",
+  "description": "Modern product showcase for DeckRite RV premium flooring solutions for trailers, ramps, decks, and interiors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

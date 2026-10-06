@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --color-brand-blue: #003A73;
+  --color-brand-red: #D6314A;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-heading {
+  font-family: 'Oswald', sans-serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+@keyframes cursorImageTrail {
+  0% {
+    transform: translate(-50%, -50%) scale(0) rotate(var(--rot-start, -10deg));
+    animation-timing-function: cubic-bezier(0.625, 0.05, 0, 1);
+  }
+  33.333% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    animation-timing-function: cubic-bezier(0.625, 0, 0.875, 0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0) rotate(var(--rot-end, 20deg));
+  }
+}
+
+.cursor-trail-card {
+  animation: cursorImageTrail 1.2s forwards;
+  will-change: transform;
+}

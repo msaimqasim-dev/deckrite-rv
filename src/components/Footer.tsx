@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowUpRight, Phone, Mail, MapPin, Linkedin, Facebook, Instagram } from 'lucide-react';
-import { DeckRiteLogo } from './DeckRiteLogo';
 import { ScrollReveal } from './ScrollReveal';
+import logoLight from '@/src/assets/images/deckrite_rv_logo_dark_bg.svg';
 
 interface FooterProps {
   onNavigateHome?: () => void;
@@ -88,7 +88,7 @@ export const Footer: React.FC<FooterProps> = ({
                 onClick={onNavigateHome}
                 className="cursor-pointer text-left focus:outline-none"
               >
-                <DeckRiteLogo className="h-10 w-auto" variant="dark" />
+                <img src={logoLight} alt="DeckRite RV" className="h-20 w-auto" />
               </button>
               
               <p className="text-sm sm:text-base text-slate-300 max-w-sm leading-relaxed">

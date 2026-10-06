@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ArrowUpRight, ChevronDown, ArrowRight, Sparkles } from 'lucide-react';
 import { PRODUCTS, Product } from '../data/deckriteData';
+import logoDark from '@/src/assets/images/logo-drop-shadow 1.svg';
 
 interface HeaderProps {
   currentRoute?: string;
@@ -68,19 +69,14 @@ export const Header: React.FC<HeaderProps> = ({
           {/* 1. Logo on the left */}
           <button
             onClick={onNavigateHome}
-            className="flex items-center gap-2.5 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#003A73] rounded-sm cursor-pointer text-left"
+            className="flex items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#003A73] rounded-sm cursor-pointer text-left shrink-0"
+            aria-label="DeckRite RV home"
           >
-            <div className="w-8 h-8 rounded-sm bg-[#003A73] flex items-center justify-center text-white font-bold text-sm tracking-wider shadow-sm transition-transform group-hover:scale-105">
-              <span className="font-heading">DR</span>
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-[#003A73] uppercase">
-                DECKRITE <span className="text-[#D6314A]">RV</span>
-              </span>
-              <span className="text-[10px] tracking-wider text-slate-500 font-medium uppercase mt-0.5">
-                Flooring Solutions
-              </span>
-            </div>
+            <img
+              src={logoDark}
+              alt="DeckRite RV"
+              className="h-9 sm:h-11 w-auto max-h-11 max-w-[180px] sm:max-w-[230px] object-contain object-left transition-transform group-hover:scale-[1.02]"
+            />
           </button>
 
           {/* 2. Desktop Navigation with Mega Menu */}

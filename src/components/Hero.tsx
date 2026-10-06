@@ -20,7 +20,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProducts }) => {
         fill="currentColor"
         aria-hidden="true"
       >
-        <path d="M12 0 C12 7, 7 12, 0 12 C7 12, 12 17, 12 24 C12 17, 17 12, 24 12 C17 12, 12 7, 12 0 Z" />
+        {/* <path d="M12 0 C12 7, 7 12, 0 12 C7 12, 12 17, 12 24 C12 17, 17 12, 24 12 C17 12, 12 7, 12 0 Z" /> */}
       </svg>
       <svg
         className="absolute right-6 lg:right-14 top-2/3 w-5 h-5 text-slate-300 pointer-events-none hidden sm:block"
@@ -28,7 +28,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProducts }) => {
         fill="currentColor"
         aria-hidden="true"
       >
-        <path d="M12 0 C12 7, 7 12, 0 12 C7 12, 12 17, 12 24 C12 17, 17 12, 24 12 C17 12, 12 7, 12 0 Z" />
+        {/* <path d="M12 0 C12 7, 7 12, 0 12 C7 12, 12 17, 12 24 C12 17, 17 12, 24 12 C17 12, 12 7, 12 0 Z" /> */}
       </svg>
 
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-[72px] xl:px-[80px]">
